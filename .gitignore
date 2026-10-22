@@ -1,0 +1,16 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# IDE & Editor Files
+.idea/
+.vscode/
+*.swp
+
+# Node Modules / Logs
+node_modules/
+npm-debug.log
+
+# Environment Files
+.env
+EOF
