@@ -35,11 +35,11 @@ The **Service Marketplace Platform** is a multi-client ecosystem designed to sol
 
 ## 🏗️ System Architecture
 
-The platform follows a clean, decoupled architecture utilizing a unified **Laravel 11 REST API** backed by **MySQL** and **Redis**, consumed concurrently by web and mobile clients.
+The platform follows a clean, decoupled architecture utilizing a unified **Laravel 13 REST API** backed by **MySQL** and **Redis**, consumed concurrently by web and mobile clients.
 
 ```
                          ┌─────────────────────────────────┐
-                         │   Laravel 11 REST API Engine    │
+                         │   Laravel 13 REST API Engine    │
                          │  (Sanctum Auth + MySQL + Redis) │
                          └────────────────┬────────────────┘
                                           │
@@ -55,7 +55,7 @@ The platform follows a clean, decoupled architecture utilizing a unified **Larav
 
 | Component | Stack / Technologies |
 | :--- | :--- |
-| **Backend API** | Laravel 11, PHP 8.3, Sanctum Token Auth, Predis |
+| **Backend API** | Laravel 13, PHP 8.3, Sanctum Token Auth, Predis |
 | **Database & Cache** | MySQL 8.0 / PostgreSQL, Redis (Queues, Session, Caching) |
 | **Web Frontend** | Next.js 14 (App Router), TypeScript, Tailwind CSS, Shadcn UI, TanStack Query v5 |
 | **Mobile App** | Flutter 3.x, Dart, Riverpod State Management, Dio HTTP Client |
@@ -177,7 +177,7 @@ All API endpoints are strictly versioned under `/api/v1/` and accept standard JS
 
 ```
 service-marketplace/
-├── backend/               # Laravel 11 REST API Application
+├── backend/               # Laravel 13 REST API Application
 │   ├── app/
 │   │   ├── Http/Controllers/Api/v1/
 │   │   ├── Models/
